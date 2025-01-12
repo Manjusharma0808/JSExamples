@@ -99,13 +99,19 @@ Q6. Write a program to print the following patterns on the console.
 *   *   *   *   *
 */
 function printPattern() {   
+    let str = '';      
     for (let i = 0; i < 5; i++) {
-        let str = '';
+        if(i == 0){
+            str = "output: <br>";
+        }
         for (let j = 0; j < 5; j++) {
             str += '*   ';
         }
-        console.log(str);   
+        str += '<br>';
+         
     }
+    console.log(str);
+    document.getElementById("Pattern").innerHTML = str;
 }
 
 
